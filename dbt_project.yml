@@ -40,3 +40,6 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+
+vars:
+  jv_x:  "{{env_var('DBT_SCHS') | lower}}"
