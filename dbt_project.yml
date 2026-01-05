@@ -41,5 +41,3 @@ models:
     example:
       +materialized: table
 
-vars:
-  jv_x:  "{{env_var('DBT_SCHS') | lower}}"
