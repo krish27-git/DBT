@@ -1,8 +1,10 @@
 {{
     config(
         materialized='incremental',
-        incremental_strategy='append'
-    )
+        incremental_strategy='insert_overwrite'
+        
+        
+         )
 }}
 
 select EMP_ID, EMP_NAME, DEPARTMENT, SALARY, STATUS, HIRED_DATE, UPDATED_AT,current_timestamp() as currtimestamp
