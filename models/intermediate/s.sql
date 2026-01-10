@@ -1,0 +1,1 @@
+{{process_data('kittu', '2026-01-10')}}
