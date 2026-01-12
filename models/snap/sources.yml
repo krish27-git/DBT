@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: kittdb_raw
+    database: KITTUDB
+    schema: raw
+    tables:
+      - name: employee
+        columns:
+          - name: emp_id
+            description: "Unique employee identifier"
+          - name: emp_name
+          - name: department
+          - name: salary
+          - name: status
+          - name: hired_date
+          - name: updated_at
+            description: "Timestamp when record was last updated"
+          - name: city
